@@ -17,7 +17,9 @@ jobs:
     - name: Build Docs
       run: |
         ls
-        yarn build
+        cd ..
+        ls
+      working-directory: .
 
     - name: Deploy To Pages
       env:
