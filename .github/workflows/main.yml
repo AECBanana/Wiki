@@ -17,17 +17,10 @@ jobs:
       uses: actions/setup-node@v1.1.0
 
     - name: Install Dependencies
-      run: |
-        ls
-        yarn
-        ls node_modules
+      run: yarn
 
     - name: Build Docs
-      run: |
-        ls
-        cd ..
-        ls
-      working-directory: .
+      run: yarn build
 
     - name: Deploy To Pages
       env:
