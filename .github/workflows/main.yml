@@ -15,7 +15,9 @@ jobs:
       run: yarn install
 
     - name: Build Docs
-      run: yarn build
+      run:
+        ll
+        yarn build
 
     - name: Deploy To Pages
       env:
