@@ -15,7 +15,7 @@ jobs:
       run: yarn install
 
     - name: Build Docs
-      run:
+      run: |
         ls
         yarn build
 
