@@ -1,0 +1,23 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Node
+      uses: actions/setup-node@v1.1.0
+
+    - name: Install Dependencies
+      run: yarn install
+
+    - name: Build Docs
+      run: yarn build
+
+    - name: Deploy To Pages
+      env:
+       BUILD_DIR: "docs/.vuepress/dist"
+      uses: maxheld83/ghpages@v0.2.1
