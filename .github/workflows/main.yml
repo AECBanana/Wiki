@@ -16,7 +16,7 @@ jobs:
 
     - name: Build Docs
       run:
-        ll
+        ls
         yarn build
 
     - name: Deploy To Pages
