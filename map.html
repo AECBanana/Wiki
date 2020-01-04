@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>谱面格式 | BanGround Wiki</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/markdown-it-texmath@0.6.0/css/texmath.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.6791c8a5.css" as="style"><link rel="preload" href="/assets/js/app.68c8ab5c.js" as="script"><link rel="preload" href="/assets/js/2.720f57a1.js" as="script"><link rel="preload" href="/assets/js/6.e3c195b9.js" as="script"><link rel="prefetch" href="/assets/js/3.e0fea32f.js"><link rel="prefetch" href="/assets/js/4.c4cc54e7.js"><link rel="prefetch" href="/assets/js/5.ebd42fe9.js"><link rel="prefetch" href="/assets/js/7.071ed83d.js"><link rel="prefetch" href="/assets/js/8.5848f57a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6791c8a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">BanGround Wiki</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/setting.html" class="sidebar-link">游戏基础设定</a></li><li><a href="/map.html" class="active sidebar-link">谱面格式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/map.html#歌曲header" class="sidebar-link">歌曲Header</a></li><li class="sidebar-sub-header"><a href="/map.html#谱面信息" class="sidebar-link">谱面信息</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="谱面格式"><a href="#谱面格式" class="header-anchor">#</a> 谱面格式</h1> <h2 id="歌曲header"><a href="#歌曲header" class="header-anchor">#</a> 歌曲Header</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token comment">// 歌曲id</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 歌曲名（仅限英文）</span>
+	<span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;kimi ni furete&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;artist&quot;</span><span class="token operator">:</span> <span class="token string">&quot;riko azuna&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// Unicode歌曲名</span>
+	<span class="token property">&quot;titleUnicode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;君にふれて&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// Unicode歌手</span>
+	<span class="token property">&quot;artistUnicode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;安月名莉子&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 背景图片地址</span>
+    <span class="token property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;background.jpg&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 歌曲封面地址</span>
+    <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cover.jpg&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 歌曲预览区间</span>
+	<span class="token property">&quot;preview&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token number">49.447</span><span class="token punctuation">,</span> <span class="token comment">// 开始时间</span>
+		<span class="token number">70.599</span> <span class="token comment">// 结束时间</span>
+	<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="谱面信息"><a href="#谱面信息" class="header-anchor">#</a> 谱面信息</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token comment">// 对应歌曲id</span>
+    <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 谱面作者（仅限英文）</span>
+	<span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qing fu&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// Unicode谱面作者</span>
+	<span class="token property">&quot;authorUnicode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;青芙&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 背景</span>
+    <span class="token property">&quot;backgroundFile&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 背景图片（留空可使用默认背景）</span>
+        image<span class="token operator">:</span> <span class="token string">&quot;background.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// 背景视频（非必需，如填写可供用户选择）</span>
+        video<span class="token operator">:</span> <span class="token string">&quot;background.mp4&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 难度</span>
+	<span class="token property">&quot;difficulty&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hard&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 等级</span>
+	<span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;notes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 类型为设置bpm</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BPM&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 开始节奏</span>
+            <span class="token property">&quot;beat&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// bpm值</span>
+			<span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">90</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">/**
+             * note类型：
+             * Single 单点或滑条开端
+             * Flick 单滑键或滑条结尾滑键
+             * SlideTick 滑条节点
+             * SlideTickEnd 滑条结尾
+             */</span>
+			<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Single&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">/**
+             * 所在节奏，用带分数表示
+             * 第一个元素为整数部分，第二个元素为分子部分，第三个元素为分母部分
+             * 如以下示例表示第2.5个节拍
+             */</span>
+			<span class="token property">&quot;beat&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 所在轨道 0-6</span>
+			<span class="token property">&quot;lane&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+            <span class="token comment">/**
+             * 有此属性的代表note属于滑条
+             * 如果type为Single，则为滑条开端
+             * 如果type为SlideTick，则为滑条节点
+             * 如果type为Flick或SlideTickEnd，则为滑条末端
+             */</span>
+            <span class="token property">&quot;tickStack&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+		<span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/setting.html" class="prev">游戏基础设定</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.68c8ab5c.js" defer></script><script src="/assets/js/2.720f57a1.js" defer></script><script src="/assets/js/6.e3c195b9.js" defer></script>
+  </body>
+</html>
